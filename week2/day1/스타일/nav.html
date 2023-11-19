@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+    <style>
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            float: left;
+            border: 1px solid black;
+            /*padding: 5px 10px; /*이대 로 할경우 링크 걸린 버튼을 표현하면 딱 그영역에 선택안하면 기능하지 않을수 있다 그래서 a 안에 넣는다 */
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 50px 50px;
+        }
+
+        .clear {
+            clear: both;
+            visibility: hidden;
+        }
+
+        nav ul li:hover {
+            /*마우스 올릴때 반응*/
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>메뉴1</li>
+            <li><a href="https://www.naver.com">메뉴1--1</a></li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+            <div class="clear"></div>
+        </ul>
+    </nav>
+</body>
+
+</html>

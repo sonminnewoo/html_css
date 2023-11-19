@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+header h1{
+	width:auto;
+	float:left;	
+	color:#ffffff;
+}
+
+nav ul {
+    padding: 10px 10px;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+    margin: 10px;
+}
+
+nav ul li a{
+	color:white;
+	text-decoration:none;	
+}
+
+header nav {
+    float: right;
+}
+
+header {
+	width: 620px;
+    color: white;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #069;
+	padding: 10px;
+	overflow: hidden;
+}
+
+main {
+    width: 635px;
+    margin-right: auto;
+	margin-left: auto;
+    border: 2px black solid;
+}
+footer { 
+    margin: auto;
+    margin-top: 0px;
+    padding: 10px;
+    width: 620px;
+    text-align: center;
+    color: white;
+    background-color: #333;
+}

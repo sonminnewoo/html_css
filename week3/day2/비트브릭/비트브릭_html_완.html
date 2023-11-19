@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비트브릭</title>
+    <style>
+      .wrap{width: 1920px; margin: 0 auto;
+      }
+
+      .logo {
+        margin-top: 10;
+        float: left;
+      }
+      .left { 
+        float: left;
+      }
+      .right { 
+        float: right;
+      }
+
+
+      header div {
+        float: right;
+      }
+
+      ul li {
+        float: right;
+        padding: 20px;
+        list-style: none;
+      }
+      ul li a {
+        color: brown;
+        text-decoration-line: none;
+      }
+      #textbox{
+        width: 1200px;
+        margin-left: 400px;
+        margin-top: 100px;
+      }
+      #half>img{
+        float: right;
+        width: 500px;
+        margin-right: 500px;
+      }
+      #button{
+        position: absolute;
+      }
+      #half::after{display: block; content: ""; clear: both;}
+      /* <!-- <section>섹션 내용뮬<div>ㅇ에프터</div></section>--> */
+      
+      .button:hover{
+        background-color: aquamarine;
+      }
+      #box{
+        background-color: skyblue;
+        width:1920px; 
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+      }
+    
+    </style>
+  </head>
+ 
+  <body>
+
+    <div class="wrap">
+      <header id="half">
+        <div class="logo"><img src="img/logo-1.png" width="100%" /></div>
+        <div>
+        <nav>
+          <ul>
+            <li><a href="#">서비스소개</a></li>
+            <li><a href="#">제품</a></li>
+            <li><a href="#">교육</a></li>
+            <li><a href="#">다운로드</a></li>
+            <li><a href="#">쇼핑몰</a></li>
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+      <main>
+        <section><img src="img/mainimg.png" alt="메인 이미지"></section>
+
+        <section id="half">
+          <img src="img/main.png" />
+          <div id="textbox">
+            <h3>만지고 배우고 만드는 세상</h3>
+            <h1>비트브릭</h1>
+            <p>비트브릭은 입추력 부분을 쉽게 만들어 주었습니다 </p>
+            <button><a href="#">쇼핑몰가기</a></button>
+          </div>
+          <!-- <div class="clear"></div> -->
+        </section>
+
+        <section>
+
+          <article id="box">
+            <img src="img/bitCat-200x200.png" alt="고양이"/>
+            <h2>비트브릭, 이렇게 사용해보세요!</h2>
+          </article>
+
+          <article id="box">
+            <div class="left">
+              <h3>센서보드처럼 사용하기</h3>
+              <img src="img/physical2.png"/>
+              <p>내용ㅇ~~~~</p>
+            </div>
+            <div class="right">
+              <h4>센서보드처럼 ~</h4>
+              <img />
+              <p>5종의 센서를 사용해보세요</p>
+            </div>
+          </article>
+          <article>
+            <div class="left">
+              <h4>센서보드처럼 ~</h4>
+              <img />
+              <p>내용ㅇ~~~~</p>
+            </div>
+            <div class="right">
+              <h4>센서보드처럼 ~</h4>
+              <img />
+              <p>내용ㅇ~~~~</p>
+            </div>
+          </article>
+        </section>
+      </main>
+
+
+      
+      <footer>
+        <p>카피라이트~~</p>
+        <ul>
+          <li>
+            <a href="#"><img / alt="페이스북"></a>
+            <a href="#"><img / alt="페이스북"></a>
+            <a href="#"><img / alt="페이스북"></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        .wrap{
+            border: 1px solid #aaa;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        header,
+        aside,
+        main,
+        footer,
+        .wrap {
+            border: 1px solid #aaa;
+            padding: 20px;
+        }
+
+        header,
+        main{
+            margin-bottom: 20px;
+        }
+        aside{
+            width: 33%;
+            float: right;
+            box-sizing: border-box;
+        }
+
+        /*odd : 홀수 , 2nd : 짝수*/
+
+        a:link
+        {/*클릭하기 전*/}
+        a:visited 
+        {/*방문 한 것*/}
+        a:active
+        {/*활성화 했을때*/}
+        a:focus
+        {/*커서나 초점이 맞을때*/}
+        a:first-of-type
+        {/*형제 중 a들의 첫번째 / last*/}
+        a:first-child
+        {/*형제 중 의 첫번째 / last*/}
+        div:first-child
+        {/*자식 중 의 첫번째 / last*/}
+        a:nth-of-type()
+        {/*형제 중 () 의 첫번째 , () 안에 누가 들어가냐 에 따라 달라짐*/}
+        div:nth-of-type() 
+        {/*자식 중 ()번째 */}
+        aside:hover{  /*hover 마우스 올렸을때*/
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            border: 3px dashed yellow;
+        }
+        main {
+            box-sizing: border-box; /*지정한 퍼센트 만큼 영역 을 padding 영역 까지 포함해서 계산한다는 지정*/
+            width: 65%;
+            float: left ;
+        }
+        /*부모 영역에서 'padding' 으로 20px 을 줘서 그렇다*/
+        footer{
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+    
+    <header><h1>사이트 제목</h1></header>
+
+    <aside>
+        <h2>사이드바</h2>
+        <ul>
+            <li>내용~~~~~~</li>
+        </ul>
+    </aside>
+
+    <main>
+        <h2>본문</h2>
+        <p>본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다</p>
+        <p>본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다본문 부분입니다</p>
+    </main>
+
+    <footer>
+        <h1>푸터</h1>
+        <p>푸터의 부분입니다 푸터의 부분입니다 푸터의 부분입니다 푸터의 부분입니다 푸터의 부분입니다 푸터의 부분입니다 푸터의 부분입니다 푸터의 부분입니다 푸터의 부분입니다 푸터의 부분입니다 푸터의 부분입니다 푸터의 부분입니다 푸터의 부분입니다 </p>
+    </footer>
+</div>
+</body>
+</html>

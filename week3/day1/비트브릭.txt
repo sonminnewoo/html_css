@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비트브릭</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+    <header>
+        <section>
+            <div class="logo"><img src="img/logo-1.png"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제품</a></li>
+                    <li><a href="#">교육</a></li>
+                    <li><a href="#">다운로드</a></li>
+                    <li><a href="#">쇼핑몰</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <img src="img/mainimg.png" alt="">
+        </section>
+
+        <section>
+            <div>
+            <h3>만지고 배우고 만드는 세상</h3>
+            <h1>비트브릭</h1>
+            <p>비트브릭은 </p>
+            <div class="button"><a href="#">쇼필몰가기</a></div>
+            </div>
+        </section>
+
+        <section>
+            <article>
+                <img src="img/bitCat-200x200.png">
+                <p>비트브릭, 이렇게 사용해보세요!</p>
+            </article>
+            <article>
+                <div class="left">
+                <h4>센서보드처럼 사용하기</h4>
+                <img src="img/physical2.png">
+                <p></p>
+                </div>
+                <div class="right">
+                <h4>완성형 로봇처럼 사용하기</h4>
+                <img src="img/perfection4.png">
+                <p></p>
+            </article>
+            <div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>카피라이트</p>
+        <ul>
+            <li>
+                <a href="#"><img alt="페이스북"></a>
+                <a href="#"><img alt="트위터"></a>
+                <a href="#"><img alt="인스타"></a>
+            </li>
+        </ul>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="learn1" content="html">
+</head>
+
+<body>
+    <h1>폼 태그</h1>
+    <form action="결과페이지">
+        <fieldset>
+            <legend>input 관련요소</legend>
+            <table border="1">
+                <tr>
+                    <th>텍스트</th>
+                    <td><input type="text" placeholder="아이디 를 입력하세요" required /></td>
+                    <td rowspan="7"><iframe width="560" height="415" src="https://www.youtube.com/embed/bolwtn_O0_s?si=orsDhWt1sWA70q6H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <th>패스워드</th>
+                    <td><input type="number" placeholder="패스워드 를 입력하세요" required /></td>
+                </tr>
+                <tr>
+                    <th>파일</th>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <th>라디오</th>
+                    <td><input type="radio" name="gender" id="man" checked>남자<input type="radio" name="gender"
+                            id="woman">여자
+                    </td>
+                </tr>
+                <tr>
+                    <th>체크박스</th>
+                    <td>
+                        <input type="checkbox" /> 댄스
+                        <input type="checkbox" /> 발라드
+                        <input type="checkbox" /> 힙합
+                    </td>
+                </tr>
+                <tr>
+                    <th>버튼</th>
+                    <td>
+                        <input type="submit" value="확인"/>
+                        <input type="reset" value="취소"/>
+                        <input type="button" value="팝업" />
+                        <button>폐기</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th>여러줄의 글상자</th>
+                    <td><textarea name="비고란" id="" placeholder="기타 내용을 적으세요" cols="40" rows="10"></textarea> </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

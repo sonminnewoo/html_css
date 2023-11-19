@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>커피_한잔의 부드러움</title>
+    <style>
+      @font-face {
+        font-family: "YClover-Bold";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2")
+          format("woff2");
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      /* 공통 : 전체, 태그 */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .clear {
+        clear: both;
+      }
+
+      /* section_s1 */
+      .s1 img {
+        width: 1200px;
+        display: block;
+      }
+      /* section_s2 */
+      .s2 {
+        text-align: center;
+        background-color: rgb(255, 223, 201);
+        height: 400px;
+      }
+      .s2 h2 {
+        font-family: "YClover-Bold";
+      }
+      .s2 h2 span {
+        color: coral;
+      }
+      .s2 ul {
+        list-style: none;
+      }
+      /* 인라인요소로 변경 or float*/
+      .s2 ul li {
+        float: left;
+        width: 23%;
+        margin: 0 1%;
+      }
+      /* section_s3 */
+
+      .s3 .s3_top img,
+      .s3 .s3_bottom img {
+        /* width: 100%; ->부모요소 기준 가로를 꽉 채움 120%~~ */
+        max-width: 100%;
+        /* 부모가 커져도 본인 사이즈인 100% 이상 확대 X*/
+      }
+
+      .s3 .s3_top > div,
+      .s3 .s3_bottom > div {
+        float: left;
+      }
+      .s3 .s3_top > div:first-of-type,
+      .s3 .s3_bottom > div:nth-of-type(2) {
+        /*div 둘 다 -> top 첫째,bottom 둘째*/
+        width: 60%;
+      }
+      .s3 .s3_top .s3_textbox,
+      .s3 .s3_bottom .s3_textbox {
+        width: 40%;
+        padding: 40px;
+        box-sizing: border-box; /*border까지 width*/
+        background-position: right bottom;
+        /* background-size: cover; */
+        /*높이 X, 내용물의 높이*/
+        height: 490px;
+        color: #fff;
+        position: relative; /*버튼의 기준 역활*/
+      }
+      .s3 .s3_top .s3_textbox {
+        background-image: url(images/back_11.jpg);
+      }
+      .s3 .s3_bottom .s3_textbox {
+        background-image: url(images/back_12.jpg);
+      }
+      .s3_textbox button {
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <!--웹의 가로 사이즈 조절-->
+      <header></header>
+
+      <!--메인 콘텐츠-->
+      <section class="s1">
+        <img src="images/back_01.jpg" alt="한잔의 부드러움" />
+      </section>
+      <section class="s2">
+        <h2>부드러움을 <span>다양하게 느껴보세요</span></h2>
+        <p>좋은 커피의 부드러운 맛은 다양하게 즐겨보세요</p>
+        <ul>
+          <li>
+            <img src="images/icon_07.png" alt="카푸치노 이미지" />
+            <p>coffe brand brochure sample text sample text</p>
+          </li>
+          <li>
+            <img src="images/icon_07.png" alt="카푸치노 이미지" />
+            <p>coffe brand brochure sample text sample text</p>
+          </li>
+          <li>
+            <img src="images/icon_07.png" alt="카푸치노 이미지" />
+            <p>coffe brand brochure sample text sample text</p>
+          </li>
+          <li>
+            <img src="images/icon_07.png" alt="카푸치노 이미지" />
+            <p>coffe brand brochure sample text sample text</p>
+          </li>
+          <li class="clear"></li>
+        </ul>
+      </section>
+      <section class="s3">
+        <div class="s3_top">
+          <div><img src="images/back_03.jpg" /></div>
+          <div class="s3_textbox">
+            <h3>고소함에 반하다</h3>
+            <p>
+              We, TongRo Image Stock, since commence with producing digital
+              Image slide transparency business in 1992, have been building
+              outstanding success.
+            </p>
+            <button>자세히 보기</button>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="s3_bottom">
+          <div class="s3_textbox">
+            <h3>깊은 맛에 반하다</h3>
+            <p>
+              We, TongRo Image Stock, since commence with producing digital
+              Image slide transparency business in 1992, have been building
+              outstanding success.
+            </p>
+            <button>자세히 보기</button>
+          </div>
+          <div><img src="images/back_04.jpg" /></div>
+          <div class="clear"></div>
+        </div>
+      </section>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 시트</title>
+    <!--스타일 시트 : 스타일을 모아둔것-->
+    <link rel="stylesheet" href="style.css">
+    <!--외부 스타일은 스타일 밖에서 선언 해준다 !!-->
+    <!--외부 스타일 시트 불러오기-->
+
+    <style>
+        /*내용*/
+        /*css 만 따로 파일을 만드는 외부 스타일 시트 가있다*/
+        /*질문1:바로 밑에 적용이 안되는것 */
+       
+
+        /*바로 밑에 것은 내부(페이지 않에) 스타일 을 정해서 지정하는 시트 */
+        .orange { /*클래스명 스타일*/
+            color: orange;
+        } 
+        /*제목 공통 스타일*/
+        /*스타일 시트 적용할때 가장 아래 것으로 우선적용한다*/
+                 /*그룹 선택자*/  
+        h2 , h3
+        h1{  /*태그 선택자*/ /*동시에 여러개 태그를 같은테그로 사용하면 ',' 를 사용해서 일괄 지정 할수있다*/
+            font-size: 30px;
+            color: grey;
+        } 
+        
+
+        * {
+            text-decoration: underline; 
+            color: aqua;
+        }
+        /*전체 에 속성을 지정하는건 '*' 로 속성을 부여한다 */
+          /* id="text" 아이디 선택자*/
+
+        /*질문2:바로 밑에 적용이 안되는것 */
+        #text {
+            letter-spacing : 10px;
+        }
+        /*#으로 text 라는 id 를 선언하고
+        아래서 id="text" 라고 지정해줘야 적용 된다*/
+
+        ul{
+            list-style-type: square ;  /*리스트 앞에 모양을 네모로 만든다*/
+            list-style-image: url(image/symbol.gif); /*이미지 텍스트를 li 앞에 표현 해주는 이미지 불러 오기 */
+            list-style: none; /*nav 만들때 앞에 모양 없앨때 사용한다 */
+            list-style-position: inside;
+        }
+
+    </style>
+    <!--테그자체를 모두 지정 , 인터넷에 널린 폰트 정보에서 가져올수도 있다 -->
+</head>
+
+<body>
+    <p class="orange">호랑이</p> 
+    <h3 style="color: orange;">메롱</h3> <!--':' 다음 은 값-->
+    <!--위 같은것을 직접 -->
+    <!--위 둘다 색을 지정하지만 위쪽이 더 간결하다-->
+    <p>호랑이</p>
+    <p><i id="text">호랑이</i></p>
+    <div>
+        <ul>
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+        </ul>
+    </div>
+
+    <p>민우야</p>
+    <ol>
+        <li>와우</li>
+    </ol>
+    
+    <h1>태그 자체에 속성이 지정된것</h1>
+    <h2>태그 자체에 속성이 지정된것</h2>
+    <h3>태그 자체에 속성이 지정된것</h3>
+</body>
+</html>

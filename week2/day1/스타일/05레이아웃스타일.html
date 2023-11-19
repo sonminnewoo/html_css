@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃스타일</title>
+    <style>
+        div {
+            width: 200px;
+            height: 150px;
+            border: 3px solid greenyellow;
+            text-align: center;
+            line-height: 150px;
+            margin: 20px 0px;
+        }
+
+        .ex1 {
+
+            float: right;
+            /*왼쪽부터 정렬*/
+            /*오른쪽부터 정렬*/
+        }
+
+        .ex2 {
+
+            float: left;
+            /*왼쪽부터 정렬*/
+            /*오른쪽부터 정렬*/
+        }
+
+        /*좌우 간단, 아래 영역에 영향,*/
+        .clear {
+            clear: both;
+        }
+
+        .ex2 {
+            border: 1px red solid;
+            width: 600px;
+        }
+
+        /*div 중에 첫번째*/
+        .ex2 div:first-of-type {
+            background-color: beige;
+            position: static;
+            /*포지션을 없앨때 사용*/
+            position: relative;
+            /*위치변화 밑 'top''left' 로 위치 변화준도*/
+            top: 100px;
+            left: 10px;
+            right: 0;
+        }
+
+        .ex2 div:nth-of-type(2) {
+            /*()안에 있는 위치를 지정하는 것 */
+            background-color: aquamarine;
+            position: absolute;
+            /*단독 사용 불가 ,단독으로 사용하면 브라우저 전체를 기준한다*/
+            top: 30px;
+            /*absolute 은 relative 기준 으로 위치 를 설정한다*/
+            left: 80px;
+            right: 0;
+        }
+
+        /* .ex2 div:last-of-type{
+            position: fixed; /*relative 있든 상관없이 브라우저 기준으로 !
+            bottom: 10px;
+        } */
+
+        /*float 을 사용하면 새로운 영역 에서 정렬을 해버린다 그래서 
+        ex2 번이 그안에서 구현된다 */
+        .f_1{
+            background-color: aliceblue;
+            float: left;
+        }
+
+        .f_2{
+            background-color: blue;
+            color: white;
+            float: right;
+        }
+        .f_3{
+            clear: both; 
+            /*clear both 로 float 명령을 초기화 해준다 */
+            /*visibility: hidden;/*시각적으로 안보임*/
+        }
+        .f_4{
+            display: none;/*존재가 사라짐*/
+        }
+        ul {
+            list-style: none;
+            border: 1px solid skyblue;
+        }
+        ul li{
+            float: left;
+            padding: 10px;
+            /*박스 내부 공간 만들어 주기*/
+            margin: 20px;
+            background-color: aquamarine;
+        }
+
+        div.clear {
+            height: 0;
+            visibility: hidden;
+        } 
+
+        #review{
+            background-color: #ddd;
+            width: 100%;
+            height: 800px;
+            text-align:center;
+            font-size: 2em;
+            font-weight: 900;
+            position: relative;
+        }
+        #review article{
+            position: absolute;
+            right: -30px;
+            top: -20px;
+        }
+
+        #Qm dl{
+            width: 100px;
+            background-color: blueviolet;
+            color: white;
+            position: fixed;
+            top : 30px;
+            right: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>박스1</div>
+    <hr/>
+    <section class="ex1">
+
+    <div>박스2-1</div>
+    <div>박스2-2</div>
+    <div class="clear">박스2-3</div>
+    </section>   -->
+
+         <section class="ex2">
+        <div>박스2-1</div>
+        <div>박스2-2</div>
+        <div>박스2-2</div>
+        <div class="clear">박스3-3</div> -->
+       </section>
+
+    <div class="f_1">박스3-1</div>
+    <div class="f_2">박스3-2</div>
+    <div class="f_3">박스3-3</div>
+    <div class="f_4">박스3-4</div>
+    <div >박스3-5</div>
+    
+    <ul>
+        <li>목록1</li>
+        <li>목록2</li>
+        <li class="clear">목록3</li>
+    </ul>
+
+    <p>123123123</p>
+
+    <hr/>
+    
+     
+    <section id="review">
+
+        <article>
+            <img src="image/naver.gif" alt="화장품">
+        </article>
+    
+        <p>review</p>
+    </section>
+<!-- 
+    <section id="Qm">
+        <dl>
+            <dt>퀵메뉴</dt>
+            <dd>회사소개</dd>
+            <dd>회사소개</dd>
+            <dd>회사소개</dd>
+        </dl>
+    </section> -->
+
+
+</body>
+</html>

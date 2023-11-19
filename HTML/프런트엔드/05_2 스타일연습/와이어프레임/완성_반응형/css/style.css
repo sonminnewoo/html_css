@@ -1,0 +1,66 @@
+/*************폰트*****************/
+
+/*************공통 요소*****************/
+*{padding: 0; margin: 0;}
+a{color: initial; text-decoration: none;}
+ul{list-style: none;}
+.inner{width: 1720px; margin: 0 auto;}
+
+/*************헤더*****************/
+header{width: 100%; height: 100px; background-color: #323232; padding-top: 32px; box-sizing: border-box;}
+header .inner::after, header .inner::before{display: block; content: ""; clear: both;}
+.logo{width: 300px; height: 36px; background-color: white; float: left;}
+
+.h_bar{float: right; width: 50px; height: 25px; padding: 5px 0; display: none;}
+.h_bar span{display: block; width: 100%; height: 5px;  background-color: #fff;}
+.h_bar span:nth-child(2){margin: 5px 0;}
+
+nav{float: right;}
+.nav1::after, .nav1::before{display: block; content: ""; clear: both;}
+.nav1 > li{float: left; margin-left: 32px; position: relative;}
+.nav1 > li > a{width: 100px; height: 36px; background-color: #464646; color: #fff; display: block; text-align: center; line-height: 36px;}
+.nav1 ul{position: absolute;}
+.nav1 ul > li{width: 100px; height: 0px; background-color: rgba(230, 230, 230, 0.8); transition: 0.5s;}
+
+/*호버*/
+.nav1 li:hover a{background-color: #ffb600; color: #000;}
+.nav1 li:hover ul li{height: 100px;}
+
+/*************메인*****************/
+.main_img{width: 100%; height: 345px; /*border: 1px solid;*/ overflow: hidden; position: relative; margin: 45px 0;}
+.main_img img{position: absolute; top:0; left: 50%; transform: translate(-50%, 0%);}
+.main_img h1{position: absolute; top:50%; left: 50%; font-size: 3em; border: solid 2px #000; padding: 5px 40px; transform: translate(-50%, -50%); border-radius: 50px;}
+
+/*************컨텐츠1*****************/
+.cont1 .inner > h1{text-align: center; font-size: 3em;}
+.con1_g::after, .con1_g::before{display: block; content: ''; clear: both;}
+.con1_g > div{float: left; width: 50%; text-align: center; margin: 45px 0;}
+.con1_img{width: 430px; height: 170px; background-color: #ffb600; margin: 0 auto;}
+.con1_g > div h3{margin: 45px 0 20px 0;}
+.con1_g > div p{width: 80%; margin: 0 auto;}
+
+/*호버*/
+.con1_img:hover{box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);}
+
+/*************푸터*****************/
+footer{width: 100%; height: 100px; background-color: #aaa;}
+
+
+/*************반응형*****************/
+@media all and (max-width:1720px){
+    .inner{width: 90%; margin: 0 auto;}
+}
+
+@media all and (max-width:1000px){
+    .inner{width: 95%; margin: 0 auto;}
+    .con1_g > div{float: none; width: 100%; margin: 45px auto;}
+}
+
+@media all and (max-width:760px){
+    .logo{width: 50%;}
+    .h_bar{display: block;}
+    .nav1{display: none;}
+    .main_img h1{font-size: 2em; width: 50%; text-align: center;}
+    .con1_img{width: 70%;}
+}
+

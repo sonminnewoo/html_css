@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <h1>폼 태그</h1>
+    <form action="결과페이지">
+        <fieldset>
+        <legend>회원가입</legend>
+        <table border="1">
+            <tr>
+                <th>텍스트</th>
+                <td><input type="text" size="2" maxlength="3" /></td>
+            </tr>
+            <tr>
+                <th>비밀번호</th>
+                <td><input type="password"/></td>
+            </tr>
+            <tr>
+                <th>첨부파일</th>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <th>라디오버튼</th>
+                <td>
+                    <input type="radio" name="gender" id="man">남자
+                    <input type="radio"name="gender" id="woman">여자
+                </td>
+            </tr>
+            <tr>
+                <th>체크박스</th>
+                <td><input type="checkbox"/> 발라드
+                <input type="checkbox"/> 힙합
+                <input type="checkbox"/> 댄스
+            </td>
+            </tr>
+            <tr>
+                <th>버튼</th>
+            <td>
+                <input type="submit" value="확인"/>
+                <input type="reset" value="취소"/> 
+                <input type="button"value="팝업">
+                <button>팝업</button></td>
+            </tr>
+            
+            <tr>
+                <th>여러줄의 글상자</th>
+                <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <th>셀렉트</th>
+                <td>
+                    <select multiple name="" id="">
+                        <option value="">010</option>
+                        <option value="">011</option>
+                        <option value="">007</option>
+                        <option value="">010</option>
+                        <option value="">011</option>
+                        <option value="">007</option>
+                    </select>
+                    <input type="range" />
+                    <input type="date" />
+                    <input type="color" />
+                    <input type="number"/>
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>

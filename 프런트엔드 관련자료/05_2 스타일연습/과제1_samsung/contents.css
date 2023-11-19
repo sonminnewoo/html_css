@@ -1,0 +1,130 @@
+@charset "utf-8";
+* { margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: "나눔고딕";
+	font-size: 12px;
+	line-height: 18px;
+}
+.wrap {
+	width: 1008px;
+	margin: 50px auto;
+}
+.lnb {
+	width: 174px;
+	float: left;
+	margin-right: 40px;
+}
+.lnb ul {
+	width: 174px;
+	list-style: none;
+	background-color: #4d5058;
+	line-height: 40px;
+	color: #FFF;
+}
+.lnb ul a {
+	text-decoration: none;
+	color: #ccc;
+	font-weight: bold;
+	border-top: 1px solid #666; /*선을 두겹을 사용하여 음영처럼 보이게 함*/
+	border-bottom: 1px solid #333;
+	display: block;
+	width: 156px;
+	height: 40px;
+	padding-left: 16px;
+}
+.lnb ul a:hover {
+	display: block;
+	width: 156px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #FF0;
+}
+.lnb ul a:active {
+	display: block;
+	width: 156px;
+	background-color: #4d5058;
+	text-decoration: none;
+	font-weight: bold;
+	color: #FF0;
+}
+.contents_all {
+	width: 794px;
+	height: 440px;
+	float: left;
+}
+.biz_area {
+	float: left;
+}
+.biz_img {
+	float: left;
+	width: 504px;
+	height: 440px;
+}
+.right_contents {
+	width: 250px;
+	padding: 20px;
+	background-color: #4d5058;
+	color: #cccccc;
+	height: 400px;
+	float: left;
+}
+.right_contents h1 {
+	color: #FFF;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.right_contents h2 {
+	color: #9dd5ff;
+	font-size: 20px;
+}
+.right_contents h3 {
+	color: #FFF;
+	text-decoration: underline;
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+.detail {
+	background-color: #70737d;
+	width: 70px;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	color: #FFF;
+	text-align: center;
+	margin-top: 10px;
+}
+.tit {
+	font-weight: bold;
+	color: #FFF;
+	margin-top: 25px;
+	margin-bottom: 2px;
+}
+.right_contents a.mail {
+	color: #9dd5ff;
+}
+.detail a {
+	color: #FFF;
+	text-decoration: none;
+}
+.contents {
+	width: 794px;
+	padding-top: 40px;
+	height: 148px;
+	clear: both;
+}
+.contents .txt {
+	width: 520px;
+	float: left;
+}
+.contents h4 {
+	font-size: 16px;
+	margin-bottom: 10px;
+	width: 520px;
+}
+.contents img {
+	margin-left: 20px;
+	float: right;
+}

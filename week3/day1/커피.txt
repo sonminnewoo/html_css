@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커피</title>
+
+    <style>
+    /*공통 : 전체, 태그*/
+    @font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+    *{
+        margin: 0; 
+        padding: 0;
+    }
+    .wrap{
+        width: 1200px; margin: 0 auto;
+    }
+    .clear{
+        clear:both;
+    }
+    /*section_s1*/
+    .s1 img{
+        width: 1200px;
+        display: block;
+    }
+    /*section_s2*/
+    .s2{
+        background-image: url(images/back_02.jpg);
+        color: white; 
+        text-align: center;
+        height: 400px;
+    }
+    .s2 h2{
+        font-family: 'NPSfontBold';
+    }
+    .s2 ul{
+        list-style-type: none;
+    }
+    .s2 ul li{
+        float: left;
+        width: 23%;
+        margin: 1px;
+    }
+    /* .s2 ul li {
+        display: inline-block;
+    } */
+     /*section_s3*/
+    .s3_top img, .s3_bottom img{
+        max-width: 100%; /*width: 100% : 부모요소 기준 가로를 꽉 채움, max-width: 부모가 커져도 본인 사이즈인 100% 이상 확대x*/
+    }
+    .s3_top > div, .s3_bottom>div {/*s3_top 바로 아레에 있는 div*/
+        float: left;
+    }
+    .s3_top > div:first-of-type, .s3_bottom > div:nth-of-type(2){ /*s3_top, s3_bottom 첫재*/
+        width: 60%; /*사진 크기*/
+    }
+    .s3_text1, .s3_text2{
+        height: 490px;
+        background-size: contain;
+        width: 40%;
+        padding: 20px;
+        box-sizing: border-box; /*bordor까지 width*/
+        color: white;
+        text-align: left;
+        position: relative; /*버튼의 기준 역할*/
+    }
+    .s3_text1{
+        background-image: url(images/back_11.jpg);
+        /*높이를 안주면 내용물의 높이를 가져감, 그러므로 이미지 높이를 지정해줘야함*/
+        /* height: 490px; */
+        /* background-position: right bottom; 오른족 아래부터 그림이 시작 */
+    }
+    .s3_text2{
+        background-image: url(images/back_12.jpg);
+    }
+    .s3_text1 button, .s3_bottom button{
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header></header>
+
+    <section class="s1">
+        <img src="images/back_01.jpg" alt="한 잔의 부드러움">
+     </section>
+
+    <section class="s2">
+        <h2>부드러움을 <span style="color: beige;">다양하게 느껴보세요</span></h2>
+        <p>좋은 커피의 부드러운 맛은 다양하게 즐겨보세요</p>
+
+        <div>
+            <ul>
+                <li><img src="images/icon_14.png" alt="커피 사진1">
+                    <p>coffe brand brochure <br>
+                        sample text sample text</p></li>
+                <li><img src="images/icon_07.png" alt="커피 사진2">
+                    <p>coffe brand brochure<br>
+                        sample text sample text</p></li>
+                <li><img src="images/icon_09.png" alt="커피 사진3">
+                    <p>coffe brand brochure<br>
+                        sample text sample text</p></li>
+                <li><img src="images/icon_11.png" alt="커피 사진4">
+                    <p>coffe brand brochure<br>
+                        sample text sample text</p></li>
+                <li class="clear"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="s3_top">
+            <div><img src="images/back_03.jpg" alt="라떼 사진"></div>
+            <div class="s3_text1"><h3>고소함에 반하다</h3>
+            <p>We, TongRo Image Stock, since commence
+                with producing digital Image slide transparency
+                business in 1992, have been building
+                outstanding success.</p>
+            <button>자세히보기</button></div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="s3_bottom">
+            <div class="s3_text2"><h3>깊은 맛에 반하다</h3>
+            <p>We, TongRo Image Stock, since commence
+                with producing digital Image slide transparency
+                business in 1992, have been building
+                outstanding success.</p>
+            <button>자세히보기</button></div>
+        
+        <div><img src="images/back_04.jpg" alt="아메리카노 사진"></div>
+        <div class="clear"></div></div>
+    </section>
+
+    <footer></footer>
+
+    </div>
+</body>
+
+</html>

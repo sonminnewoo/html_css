@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4박스스타일</title>
+    <style>
+        div {
+            width: 200px;
+            height: 150px;
+            border: 1px red solid ;
+            text-align: center;
+            line-height: 150px; /*텍스트가 한줄일때 높이 만큼 사이즈를 주면 세로 중앙정렬을 알수 있다 */
+        }
+        /*이렇게 지정하면 안에 내용이 너무 많아지면 밖으로 삐져 나오게 된다 */
+        .b1{
+            margin-top: 50px;
+            margin-left: 100px;
+            margin: 10px ;/*모두 통일*/ 
+            margin: 10px 20px; /*위+아래 , 좌+우*/
+            margin: 50px 20px 70px 100px; /*위,오,아,왼 순으로 한번에 마진을 줄수 있다 , 하나만 쓰면 전부, 두개 만 쓰면 좌우 위아래 지정이다  */
+        }
+        .b2 {
+            margin: auto; /*중앙 정렬할때 사용한다, 박스 사이즈가 특정되어있고 좌우로 하나만 있을때 사용한다 보통 좌우로 사용하는데 
+            위아래로 적용해서 작은 항목을 따라오게끔 할수 있을거 같다 */
+        }
+        .b3{
+            padding-left: 40px;
+            padding-top: 20px;
+            padding: 10px 20px 30px 40px ; /*마진과 동일하게 위오아왼 순*/
+        }
+        section{
+            background-color: gray;
+            padding-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+    <div class="b1">박스1 - 마진</div>
+    <div class="b1">박스2</div><!--이렇게 이어 적혀 있으면 마진은 같이 만나는 위,아래 마진 끼리에서 큰 값으로 적용 된다-->
+    <div class="b2">박스3</div>
+    <div class="b3">박스4 - 패딩</div>
+    </section>
+</body>
+</html>

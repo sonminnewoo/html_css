@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셜록</title>
+<style>
+/*공통*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear{
+        clear:both;
+}
+/*section_1*/
+.top{
+    text-align: center;
+}
+.left, .right{
+    border: 1px solid #0f6ade;
+    box-sizing: border-box;
+    background-color: #e3efff;
+    width: 48%;
+    height: 300px;
+    margin: 30px 1%;
+    padding: 30px;
+    position: relative;
+    background-position: right 20px bottom 20px;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    border-radius: 10px;
+}
+.left:hover{
+    border-width: 2px;
+}
+.right:hover{
+    border-width: 2px;
+}
+.left h3, .right h3{
+    color: #0f6ade;
+}
+.left{
+    float: left;
+    background-image: url("셜록/image/leftbn-imgbox-pc.png");
+}
+.right{
+    background-image: url("셜록/image/rightbn-imgbox-pc.png");
+    float: right;
+}
+.button{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+.button a{
+    display: block; /*인라인이라서 글씨 크기만큼만 크기를 들고가서 블럭으로 바꿔서 크기 변경함*/
+    padding: 5px 10px;
+    /* width: 100px;
+    height: 60px; */
+    background-color: #0B69DF;
+    color: white;
+    border-radius: 50px; /*끝을 둥글게*/
+    /*둥근 사각 : px / 원을 만들고 싶을 때 : %*/
+}
+/*infor*/
+#infor{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 0;
+    /*position이 있을 때 z-index 사용 가능*/
+}
+#infor .infor_img, #infor .infor_text{
+    float: left;
+}
+#infor .infor_text{
+    width: 350px;
+    height: 60px;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 2px #cccc;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+#infor .infor_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e3efff;
+    text-align: center;
+    position: relative;
+}
+#infor .infor_img img{
+    margin: 10px;
+    /*개체 중앙정렬*/
+    /* transform: translatey(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%; */
+}
+.last{
+    background-color: #163354;
+}
+</style>
+</head>
+
+<body>
+    <div><a href="">위로</a></div>
+    <div class="wrap">
+    <header></header>
+
+    <main>
+        <section id="s1">
+        <div class="top">
+            <h2>우리가 바라던 헤드헌팅, <span style="color: blue;">셜록N</span></h2>
+            <p>선택하기 어렵고 불편하던 헤드헌팅, 셜록N이 바꿔갑니다!</p>
+        </div>
+        <div class="box">
+        <div class="left">
+            <h3>검증된 포지션제안을 찾으시나요?</h3>
+            <p>나의 가치를 올리는 셜록N에서<br>
+            선발된 헤드헌터에서 포지션제안을 받아보세요!</p>
+            <div class="button"><a>상세보기</a></div>
+        </div>
+
+        <div class="right">
+            <h3>빠른 인재채용이 필요한가요?</h3>
+            <p>1000명 이상의 헤드헌터s가 우리 회사 인재를 찾아드립니다.<br>
+            셜록N에서 인재추천을 받겠습니까?</p>
+            <div class="button"><a>상세보기</a></div>
+        </div>
+        <div class="clear"></div>
+         <!--div.box::after-->
+        </div>
+         </section>
+
+         <section id="infor">
+        <div>
+            <p class="infor_text">셜록N이 도와드릴게요.<br>
+            이용 관련 애로사항을 해결해드리겠습니다.</p>
+            <div class="infor_img"><img src="셜록/image/consult_default.svg" alt=""></div>
+        </div>
+        <div class="clear"></div>
+         </section>
+
+        <div class="last">
+            <h2>쉽고 효과적인 헤드헌팅플랫폼, 셜록N을 시작해보세요.</h2>
+            <div>
+                <h3>후보자</h3>
+                <p>포지션제안 받기</p>
+                <img src="셜록/image/moveView_img_nt1n.svg">
+                <button>바로가기 ></button>
+            </div>
+            <div>
+                <h3>구인기업</h3>
+                <p>구인의뢰하기</p>
+                <img src="셜록/image/moveView_img_nt2.svg">
+                <button>바로가기 ></button>
+            </div>
+            <div>
+                <h3>서치펌</h3>
+                <p>이용신청하기</p>
+                <img src="셜록/image/moveView_img_nt3n.svg">
+                <button>바로가기 ></button>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+    </div>
+</body>
+</html>

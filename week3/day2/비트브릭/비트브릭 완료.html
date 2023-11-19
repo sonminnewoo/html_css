@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비트브릭</title>
+    
+    <style>
+             /* 공통 */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrap {
+        width: 1920px;
+        margin: 0 auto;
+      }
+
+      /* header */
+      header::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      header .logo {
+        float: left;
+        width: 150px;
+        height: 50px;
+      }
+      header .logo img {
+        width: 100%;
+        max-width: 100%;
+      }
+      header nav {
+        float: right;
+        width: 350px;
+        height: 50px;
+      }
+      header nav ul {
+        list-style: none;
+      }
+      header nav ul li {
+        display: inline-block;
+      }
+      header nav ul li a {
+        color: #555a6d;
+        text-decoration: none;
+        line-height: 50px;
+        background-color: aqua;
+      }
+      .s1 img {
+        display: block;
+      }
+      .s2 {
+        background: url(img/main.png), linear-gradient(120deg, #ccc 70%, #fff 70%);
+        width: 1920px;
+        height: 711px;
+        position: relative;
+        /* 아래 방식 으로 스타일  .s2 > img  을 대체 할수 있다  */
+        /* 아래 에서 이미지 지정 부분은 상제 해줘야 한다  */
+
+        
+        /* background-image: url(img/main.png) ; */
+        background-position: right 200px bottom 100px; 
+        background-position: left 200px bottom 100px, left top;
+        background-size: 800px , 100%;
+        background-repeat: no-repeat;
+      }
+      .s2 > div {
+        width: 400px;
+        height: 300px;
+        /* border: 1px solid; */
+        position: absolute;
+        top: 100px;
+        left: 200px;
+      }
+      .s2 > img {
+        position: absolute;
+        width: 700px;
+        right: 300px;
+        bottom: 100px;
+      }
+      .s3 {
+        width: 1920px;
+      }
+
+      .button {
+        width: 80px;
+        background-color: cornflowerblue;
+        color: white;
+      }
+
+      .a1{
+        /* position: absolute;
+        left: 50%; */
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        background-color: cornflowerblue;
+        /* padding: 100px 0 ; box-sizing  : border-box*/
+      }
+      
+      .s3 div {
+        width: 50%;
+        float: left;
+        text-align:center;
+        height: 500px;
+        color:white;
+      }
+
+     .s3 article:nth-of-type(2)::after, 
+     .s3 article:nth-of-type(3)::after
+     {
+        display: block;
+        contain: "";
+        clear: both;
+      }
+
+      .s3 > article:nth-of-type(2) > div:first-of-type {
+        background-color: darkolivegreen;
+      }
+      .s3 > article:nth-of-type(2) > div:last-of-type {
+        background-color: cornflowerblue;
+      }
+      .s3 > article:nth-of-type(3) div:first-of-type {
+        background-color: cornflowerblue;
+      }
+      .s3 > article:nth-of-type(3) > div:last-of-type {
+        background-color: cornflowerblue;
+      }
+
+        header::after{display: block; content: "";}
+        /* 마무리를 반드시 해줘야 한다  */
+
+        footer {
+            height: 171px;
+            background: #eceff4;
+            color: #555a6d;
+            padding: 20px 0 ;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        footer ul{
+            list-style: none;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        footer ul li {
+            display: inline-block;
+            width: calc(100% / 3);
+            float: left;
+        }
+        
+        footer ul li a { 
+            width: 50px;
+            height: 50px;
+            background-color: #ccc;
+            display: block;
+            border-radius: 5px;
+        }
+
+        footer ul li a img {
+            width: 100%;
+            filter: invert(1);
+        }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="wrap">
+      <header>
+        <div class="logo"><img src="img/logo-1.png" alt="logo image"/></div>
+        <nav>
+          <ul>
+            <li><a href="#">서비스소개</a></li>
+            <li><a href="#">제품</a></li>
+            <li><a href="#">교육</a></li>
+            <li><a href="#">다운로드</a></li>
+            <li><a href="#">쇼핑몰</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="s1">
+            <img src="img/mainimg.png" alt="메인 이미지"/>
+        </section>
+
+        <section class="s2">
+          <div>
+            <h3>만지고 배우고 만드는 세상</h3>
+            <h1>비트브릭</h1>
+            <p>비트브릭은~~~~</p>
+            <div class="button"><a href="">쇼핑몰가기</a></div>
+          </div>
+          <!-- <img src="img/main.png"/> 기존1 -->
+        </section>
+        
+        <section class="s3">
+
+          <article class="a1">
+            <img src="img/bitCat-200x200.png" />
+            <p>브트브릭, 이렇게 사용해보세요 !</p>
+          </article>
+
+          <article>
+            <div class="left">
+              <h3>센서보드처럼 사용하기</h3>
+              <img src="img/physical2.png"/>
+              <p>5종류의 센서를 사용하여 피지컬 컴퓨팅을 시작해보세요, <br>
+            LED 와 버저,모터도 함께 사용하면 더욱 흥미로운 수업이 가능합니다.</p>
+            </div>
+
+            <div class="right">
+              <h3>센서보드처럼 ~</h3>
+              <img src="img/perfection4.png"/>
+              <p>내용ㅇ~~~~</p>
+            </div>
+
+          </article>
+
+          <article id="a3">
+            <div class="left">
+              <h3>센서보드처럼 ~</h3>
+              <img src="img/originality3.png"/>
+              <p>내용ㅇ~~~~</p>
+            </div>
+            <div class="right">
+              <h3>센서보드처럼 ~</h3>
+              <img src="img/easily3.png"/>
+              <p>내용ㅇ~~~~</p>
+            </div>
+          </article>
+
+        </section>
+      </main>
+
+      <div>
+      <footer>
+        <p>카피라이트~~</p>
+
+        <ul>
+
+          <li>
+            <a href="#"><img src="img/if_03-twitter_104501_.png" alt="페이스북"/></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="img/if_197-Facebook_192155_.png" alt="페이스북"/></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="img/if_38-instagram_1161953_.png" alt="페이스북"/></a>
+          </li>
+          
+        </ul>
+
+      </footer>
+    </div>
+
+  </body>
+</html>
