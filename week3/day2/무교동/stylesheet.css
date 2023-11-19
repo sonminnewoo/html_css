@@ -32,19 +32,37 @@ color: black;
 text-decoration: none;
 }
 .left {
-width: 50%;
+width: 45%;
 float: left;
 }
 .right{
+    position: relative;
 margin-top: 100px;
-width: 50%;
+margin-left: 3px;
+width: 45%;
 float: right;
 text-align: left;
 }
 
-h4 ,h3 span { font-family:'Pacifico' !important;
+/* 아래 실패한 이미지 위에 텍스트 하는 스타일  */
+
+/* .right img {
+    position: relative;
 }
+.right img h2,h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: (-50%, -50%);
+    color: black;
+} */
+
+
+h4 ,h3 span { font-family:'Pacifico' !important;
+}   
+
 #important{
+    margin-top: 100px;
     color: brown;
     text-align: center;
 }
@@ -52,15 +70,49 @@ h4 ,h3 span { font-family:'Pacifico' !important;
     text-align: center;
 }
 
+header div .inner section .inner {
+    margin-top: 100px;
+}
+
 a {
+    width: 30px;
     text-decoration: none;
-    color: white;
-    background-color: cornflowerblue;
     padding: 0%;
+    color: white;
+}
+
+
+.button {
+    position: absolute;
+    top: 50%;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    /* box-shadow: 0 0 5px 5px gray; */
+    padding: 15px;
+    min-height: 30px;
+    min-width: 120px;
+}
+/* 마우스를 올렸을때 색이 변하는 기능 */
+.button:hover {
+    background-color: beige;
+    transition: 0.7s;
+}
+/* 키보드로 조작할떄만 표시되는 기능  */
+.button:focus{
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+    transition: 0.7s;
+}
+/* 버튼을 눌렀을때 색이 바뀌는 기능 */
+.button:active {
+    background-color: #ffbf00;
 }
 
 .inner ul  {
     width: 100%;
+    list-style: none;
 }
 
 section .inner ul li {
@@ -68,5 +120,20 @@ section .inner ul li {
     margin: 0 20px;
 }
 
-section::after{display: block; content: "";      clear: both;}
+section::after{display: block; content: ""; clear: both;}
 
+footer {
+    background-color: black;
+    width: auto;
+    margin: 0 0;
+    text-align: center;
+    color: #333;
+}
+
+footer ul li {
+    list-style: none;
+    float: left;
+    margin: 20px 20px;
+    background-color: black;
+    height: 30px;
+}
