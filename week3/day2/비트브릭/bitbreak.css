@@ -1,0 +1,14 @@
+/* 모바일 화면 회전 */
+/* 가로형 */
+@media screen and (orientation:landscape){
+    header{background-color: orange;}
+    header .logo,
+    header nav {
+        float: none;
+    }
+}
+
+/* 세로형 */
+@media screen and (orientation:portrait) {
+    
+}

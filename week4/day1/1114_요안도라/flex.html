@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    /* #one{
+        height: 50px;
+        margin: 0 10px;
+    }
+    #two{
+        height: 100px;
+        margin: 0 10px;
+    }
+    #three{
+        height: 150px;
+        margin: 0 10px;
+    }
+    #four{
+        height: 200px;
+        margin: 0 10px;
+    }
+    #five{
+        height: 250px;
+        margin: 0 10px;
+    }
+    #six{
+        height: 300px;
+        margin: 0 10px;
+    } */
+
+    section div {
+        /* 이부분 에서 너비를 200px 정하지 않고 플렉스를 사용해서 
+        어떤 영역을 채우게 하면 flex 가 알아서 채워 나간다  */
+        width: 200px;
+        background-color: cadetblue;
+        border: 1px solid blue;
+        padding: 30px 0;
+        text-align: center;
+    }
+/* float : 옆으로 자동 정렬되지만 자유롭게 지정할수 없는 한계 , position : 임의 위치로 지정자능하지만 자동으로 지정할수 없는 한계 ,  flex,wrap : 위 단점을 극복하는 방식 
+display:flex; */
+    
+    .f_wrap{
+        flex-wrap: wrap; 
+        height: 500px;
+        /* 기본 :no-wrap, 아이템 작아 짐  */
+        /* wrap : 아이템이 본인 사이즈 유지 ! */
+        /* wrap-reverse : 아이템이 거꾸로 올라가면서 배치 */
+    }
+
+
+    section {
+        width: 80%;
+        border: 1px solid red;
+        display: flex;
+        /* 이렇게 하면 기본적으로 가로 정렬하게 된다 */
+        flex-direction: row;
+        /* 위 줄은 flex 의 기본 값을 바꾼다
+        row : 왼->오른쪽  
+        row-inverse : 오른쪽->왼
+        column : 위 -> 아래
+        colum-inverse : 아래->위*/
+    }
+    
+    .justify1 {
+        justify-content: flex-end;
+        /* left ,flex-start : 왼쪽 */
+        /* flex-end : 오른쪽으로  */
+    }
+    .justify2 {
+        justify-content: center;
+        /* center : 중앙 정렬 */
+
+    }
+    .justify3 {
+        justify-content: space-around;
+        /* space-around : 일정한 공간을 만들어준다 */
+
+    }
+    .justify4 {
+        justify-content:space-between;
+        /* space-between : 공간의 여백 만 움직인디*/
+    }
+
+    .align1 {
+        height: 200px;
+        align-items: flex-start;
+        /* flex-start : top 이랑 유사하다 / 위 정렬, 아이템들은 본인 사이즈 챙김  */
+    }
+    .align2 {
+        height: 200px;
+        align-items: flex-end;
+        /* flex-end : bottom 과 비슷한 / 아래 정렬  */
+    }
+    .align3 {
+        height: 200px;
+        align-items: center;
+        /* center : 중앙 정렬 */
+    }
+    .align4 {
+        height: 200px;
+        align-items: baseline;
+        /* baseline : 높이가 가장 높은 개체를 기준으로 중앙 정렬 */
+    }
+    
+    /* 컨테이너 ㅈ */
+    /* order 는 전부 순서를 매겨야 명령할수 있다  */
+    .order div:first-of-type{
+    }
+    
+    .order div:nth-child(2) {
+        order: 5;
+        order: 4;
+    }
+    .order div:nth-child(3) {
+        order: 1;
+    }
+    .order div:nth-child(4) {
+        order: 2;
+    }
+    .order div:nth-child(5) {
+        order: 5;
+    }
+    .order div:last-of-type {
+        order: 3;
+    }
+
+    .flex div:nth-child(2) {
+        flex: 2 2 0;
+        /* flex-grow: ;
+        flex-shrink: ;
+        flex-basis: ; */
+        /* flex 는 얼마나 늘릴지 줄일지 한번에 지정 */
+        /* 얼마나 늘리지, 얼마나 줄일지, 기본 크기 속성 */
+        /* initial : 최소 줄여버림 (중이게 되면 ) */
+        /* auto : 아이템크기를 기본으로 컨테이너의 사이즈에 따라 변동 */
+    }
+    
+body{
+    margin: 100px;
+    border: 1px solid black;
+    padding: 20px;
+}
+    </style>
+</head>
+    <body>
+        <h1>플렉스 flex / wrap</h1>
+        <section class="f_wrap"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+
+        <hr/>
+
+        <h1>가로 배치 Justify</h1>
+            <section class="justify1"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+
+        <section class="justify2"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+
+        <section class="justify3"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+
+        <section class="justify4"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+
+        <hr>
+        <h1>높이 Align</h1>
+        <section class="align1"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+        <section class="align2"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+        <section class="align3"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+        <section class="align4"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+        <section class="align5"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+        <section class="align6"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+        
+        <hr>
+        <h1>아이템 넓이와 순서</h1>
+        <section class="order"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+
+        <section class="flex"> <!--컨테인 : 플렉스를 지정하는 것 , 감싸는것-->
+            <div id="one">1</div> <!--아이템 : 차곡차공 요소로 가짐 -->
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </section>
+
+    </body>
+</html>

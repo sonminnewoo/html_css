@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카피한 페이지</title>
+    <!-- 반응형 버전 -->
+
+    <style>
+      /* 공통 */
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* section_1 */F
+      #s1 h2,
+      #s1 > p {
+        text-align: center;
+      }
+      #s1 h2 span {
+        color: blue;
+      }
+      #s1 > div.box::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+
+      #s1 > div > div {
+        width: 48%;
+        height: 300px;
+        float: left;
+        margin: 30px 1%;
+        padding: 30px;
+        box-sizing: border-box;
+        border: 1px solid #0f6ade;
+        background-color: #e3efff;
+        position: relative;
+        border-radius: 10px;
+      }
+      /* = .right, .left{} */
+
+      /* 너비 지정 민맥스 제대로 하기 !!! */
+      /* 개념 제대로 알기 !! */
+      @media all and (min-width: 1200px) {
+          #s1 > div > div {
+            /* 너무 붙지않게 90% */
+          width: 550px;
+          float: left;
+          margin: 30px 1%;
+        }
+      }
+
+      @media all and (max-width: 700px){
+          #s1 > div {
+            margin: 30px  auto ;
+          }
+
+            #s1 > div > div {
+            width: 90%;
+          }
+        }
+
+      #s1 > div > div:hover {
+        border-width: 2px;
+      }
+
+      #s1 > div > div h3 {
+        color: #0f6ade;
+        margin-bottom: 10px;
+      }
+      #s1 div.button {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+      }
+      #s1 div.button a {
+        display: block;
+        padding: 5px 20px;
+        /* width: 100px;
+        height: 60px; */
+        background-color: #0b69df;
+        color: white;
+        border-radius: 50px;
+        /* 둥근 사각 - px / 원 - % */
+      }
+      #s1 .left {
+        background-image: url(image/leftbn-imgbox-pc.png);
+        background-position: right 20px bottom 20px;
+        background-repeat: no-repeat;
+        background-size: 200px;
+      }
+      #s1 .right {
+        background-image: url(image/rightbn-imgbox-pc.png);
+        background-position: right 20px bottom 20px;
+        background-repeat: no-repeat;
+        background-size: 200px;
+      }
+      /* section_infor */
+      #infor {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 900;
+        /* position이 있을 때 */
+      }
+      #infor > div::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      #infor .infor_t,
+      #infor .infor_img {
+        float: left;
+      }
+
+      #infor .infor_t {
+        width: 200px;
+        height: 50px;
+        padding: 5px 10px;
+        box-shadow: 2px 2px 2px #ccc;
+        border-radius: 20px;
+        background-color: #fff;
+      }
+      #infor .infor_img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #e3efff;
+        text-align: center;
+        /* position: relative; */
+      }
+      #infor .infor_img img {
+        margin: 10px;
+        /* 개체 중앙정렬 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%); */
+      }
+
+      header {
+        background-color: chartreuse;
+        color: #fff;
+      }
+      header::before {
+        display: block;
+        content: "before";
+        width: 100px;
+        background-color: black;
+      }
+      header::after {
+        display: block;
+        content: "after";
+        width: 100px;
+        background-color: rgb(255, 0, 0);
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <section id="infor">
+      <div>
+        <p class="infor_t">셜록N이 ~~</p>
+        <div class="infor_img"><img src="image/consult_default.svg" /></div>
+        <!--clear-->
+      </div>
+      <div><a href="#s1">위로</a></div>
+    </section>
+    <div class="wrap">
+      <header>헤더:네비나 로고가 들어갑니다</header>
+      <!-- <header>
+        <div>메롱</div>
+        헤더~~
+        <div>메롱</div>
+      </header> -->
+      <main>
+        <section id="s1">
+          <h2>우리가 바라던~~<span>셜록N</span></h2>
+          <p>선택하기~~</p>
+          <div class="box">
+            <div class="left">
+              <h3>검증된 포지션~~</h3>
+              <p>
+                나의 가치를~~~~<br />
+                선별된~~~
+              </p>
+              <div class="button"><a>상세보기</a></div>
+            </div>
+            <div class="right">
+              <h3>빠른 인재채용~~</h3>
+              <p>
+                1000명 이상~~<br />
+                셜록N에서
+              </p>
+              <div class="button"><a>상세보기</a></div>
+            </div>
+            <!-- <div class="clear"></div> -->
+            <!--div.box: after-->
+          </div>
+        </section>
+      </main>
+
+      <footer style="margin: 300px"></footer>
+    </div>
+
+    <section></section>
+  </body>
+</html>

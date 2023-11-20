@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+.wrap {
+    width: 1920px;
+    margin: 0 auto;
+     }
 /* 이거 적용하면 컨텐츠를 중앙에 정렬할수 있다  */
 .inner {
     position: relative;
@@ -103,7 +107,7 @@ header nav ul li a {
     float: left;
     width: 50%;
     height: 572px;
-} 
+}
 
 /* 두번째 .s1 > div 지정하려고.s1 > div:nth-of-type(2) 적음   */
 .s1 > div:nth-of-type(2) {

@@ -6,6 +6,7 @@
     <title>비트브릭</title>
     
     <style>
+      /* @media 는 가변형 하면서 추가된 내용  */
              /* 공통 */
       * {
         margin: 0;
@@ -23,7 +24,7 @@
           width: 100%;
         } 
       }
-      
+
     /* 내가 작성한 부분 */
     /* @media all and (max-width:500px){
       div{
@@ -78,8 +79,8 @@
 
       @media all and (max-width : 1920px) {
           .s1 img {
-          display: 100%;
-        }
+          width: 100%;
+         }
       }
 
       .s2 {
@@ -232,7 +233,10 @@
         /* 가로가 500 일때 세로 정렬 */
        
     </style>
+<!-- 가로 사이즈가 최대 768 미만이어야 적용됨 -->
+    <link rel="stylesheet" href="bitbreak.css" media="all and (max-width:768px)" />
   </head>
+
   <body>
 
     <div class="wrap">
