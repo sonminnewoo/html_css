@@ -5,11 +5,31 @@
     <title>솔로의 식탁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+
 	<style>
 		@media all and (min-width: 768px) {
 			/* 768px이전 까지 기본으로 사용 */
 			#menus {
 				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			#menu1, #menu2, #menu3, #menu4 {
+				width: 49%;
+			}
+			#menu5 {
+				width: 100%;
+			}
+		}
+		/* 피시  */
+		@media all and (min-width : 992px) {
+			#menu1,
+			#menu2, 
+			#menu3,
+			#menu4 {
+				width: 33%;
+				flex : 2 2 0;
+				/* 확장확장줄이고 */
 			}
 		}
 
