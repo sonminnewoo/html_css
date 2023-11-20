@@ -15,34 +15,57 @@
       .wrap {
         width: 1920px;
         margin: 0 auto;
+        border: 1px solid red;
+       } 
+
+      @media all and (max-width : 1920px) {
+        .wrap {
+          width: 100%;
+        } 
       }
+      
+    /* 내가 작성한 부분 */
+    /* @media all and (max-width:500px){
+      div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      }
+    } */
 
       /* header */
+
       header::after {
         display: block;
         content: "";
         clear: both;
       }
+
       header .logo {
         float: left;
         width: 150px;
         height: 50px;
       }
+      
       header .logo img {
         width: 100%;
         max-width: 100%;
       }
+
       header nav {
         float: right;
         width: 350px;
         height: 50px;
       }
+
       header nav ul {
         list-style: none;
       }
+
       header nav ul li {
         display: inline-block;
       }
+
       header nav ul li a {
         color: #555a6d;
         text-decoration: none;
@@ -52,6 +75,13 @@
       .s1 img {
         display: block;
       }
+
+      @media all and (max-width : 1920px) {
+          .s1 img {
+          display: 100%;
+        }
+      }
+
       .s2 {
         background: url(img/main.png), linear-gradient(120deg, #ccc 70%, #fff 70%);
         width: 1920px;
@@ -59,7 +89,6 @@
         position: relative;
         /* 아래 방식 으로 스타일  .s2 > img  을 대체 할수 있다  */
         /* 아래 에서 이미지 지정 부분은 상제 해줘야 한다  */
-
         
         /* background-image: url(img/main.png) ; */
         background-position: right 200px bottom 100px; 
@@ -67,6 +96,24 @@
         background-size: 800px , 100%;
         background-repeat: no-repeat;
       }
+
+      @media all and (max-width : 1920px) {
+          .s2 {
+          /* background: url(img/main.png), linear-gradient(120deg, #ccc 70%, #fff 70%); */
+          width: 100%;
+          /* height: 711px; */
+          position: relative;
+          /* 아래 방식 으로 스타일  .s2 > img  을 대체 할수 있다  */
+          /* 아래 에서 이미지 지정 부분은 상제 해줘야 한다  */
+
+          /* background-image: url(img/main.png) ; */
+          /* background-position: right 200px bottom 100px; 
+          background-position: left 200px bottom 100px, left top;
+          background-size: 800px , 100%;
+          background-repeat: no-repeat; */
+        }
+      }
+
       .s2 > div {
         width: 400px;
         height: 300px;
@@ -130,6 +177,20 @@
         background-color: cornflowerblue;
       }
 
+      .s3 article > div {
+            width: 50%;
+            float: left;
+            padding: 50px 0;
+            text-align: center;
+            color: white;
+          }
+
+      @media all and (max-width : 700px){
+          .s3 article > div {
+            width: 100%;
+          }
+      }
+
         header::after{display: block; content: "";}
         /* 마무리를 반드시 해줘야 한다  */
 
@@ -167,6 +228,9 @@
             filter: invert(1);
         }
 
+        /* ---------------------------------------반응형 스타일------------------------------------------ */
+        /* 가로가 500 일때 세로 정렬 */
+       
     </style>
   </head>
   <body>
@@ -260,7 +324,8 @@
         </ul>
 
       </footer>
-    </div>
 
+    </div>
   </body>
+
 </html>

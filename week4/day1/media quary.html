@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>미디어 쿼리</title>
+
+    <style>
+
+        section{
+            width: 100%;
+            padding: 20px;
+            border: 1px solid red;
+            /* 스크롤 없애기 : 밑에 요소를 없애면 네모 상자 선이 화면 에 다표시
+            되지 않고 가로 스크롤 이 생기기기도 한다   */
+            box-sizing: border-box;
+        }
+        div {
+            width: 80%;
+            height: 600px;
+            background-color: gray;
+            margin: 0 auto;
+        }
+        /* all 어떤 대상을 맞춰서 설정할지 적는 부분 현재는 all 했음 
+
+        min-width : 가로가 최소 800px 까지  */
+        @media all and (min-width: 800px) {
+            div {
+                background-color: pink;
+            }
+        }
+        /*max-width : 가로가 최대 500px 까지 */
+        @media all and (max-width: 500px) {
+            div {
+                background-color: aquamarine;
+            }
+        }
+
+        /* 미디어쿼리 중단점 _css를 적용할 사이즈 */
+        /* 데스크탑 : ~ 1720px
+        태블릿 : ~ 768px(세로) / ~ 1024px(가로)
+        모바일 : ~ 320px  / 모바일도 모바일 속에서 대중소 로 나누기도 한다 */ 
+
+    </style>
 </head>
+
 <body>
-    
+    <section>
+        <div></div>
+    </section>    
 </body>
 </html>

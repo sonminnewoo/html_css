@@ -12,17 +12,17 @@
     margin: 0 auto;
 }
 
-.mainimg div {
+.mainimg div div{
     /* rgb 만있으면 색만 표현 rgba 는 마지막 항목은 투명도임  */
     width: 600px;
     height: 500px;
     background-color: rgba(187, 9, 9, 0.7);
     color: white;
-    
     position: absolute;
-    top: 50%;
+    top: 20%;
     right: 5px;
-    transform: translate(-50%);
+    transform: translate y(-50%);
+    /* translate 만 적으면 x , y 고 translate y 는 y 만 적용  */
 }
 
 /* header */
