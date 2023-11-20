@@ -5,37 +5,25 @@
 }
 #container {
 	width:100%;
-  height: 100%;
 }
-
-section {
-  justify-content: flex-start;
-}
-
 header {
-	width:100%;
-  height: 150px;			
+	width:100%;			
 }
-
 header h1 {
   font-size:3em;
   text-align: center;
 }
-
 #menus {
-  
-	width:100%;
+	width:100%;         
 }
-
 #menus > div {
   position:relative;
   height:400px;
-  width: 40%;
-  justify-content: flex-start;
-  margin-bottom:15px;
+  border:1px solid black;
+   margin-bottom:15px;
 }
 #menu1, #menu2, #menu3, #menu4, #menu5 {
-  width:40%;
+  width:100%;
 }
 #menus h2 {
   position:absolute;
@@ -66,7 +54,6 @@ header h1 {
   background:url("../images/dish5.jpg") no-repeat center;
   background-size:cover;
 }
-
 footer {
   width:100%;
   background:#373737;
@@ -77,4 +64,7 @@ footer p {
   color:#eee;
   text-align:center;
    line-height:200px;
+}
+#menus{
+  justify-content: flex-start;
 }
