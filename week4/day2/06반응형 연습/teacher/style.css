@@ -1,0 +1,99 @@
+/* 공통 */
+* {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+.s1,
+.s2,
+.s3 {
+  padding: 20px 0;
+}
+.s1,
+.s3 {
+  width: 992px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  height: 100px;
+  background-color: #222;
+}
+
+header nav > ul {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav > ul > li a {
+  display: block;
+  padding: 5px 10px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+header nav > ul > li a:hover {
+  color: yellow;
+}
+
+/* mainimg */
+.mainimg img {
+  width: 100%;
+}
+
+/* main */
+/* s1 */
+.s1 > div {
+  display: flex;
+  justify-content: space-between;
+}
+.s1 > div div {
+  width: 49%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+/* s2 */
+.s2 {
+  background-color: #eee;
+}
+.s2 .inner {
+  width: 992px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.s2 .inner > h1 {
+  width: 100%;
+}
+.s2 .inner > div {
+  width: 49%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* s3 */
+.s3 > div {
+  display: flex;
+  justify-content: space-between;
+}
+.s3 > div div {
+  width: 49%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* footer */
+footer {
+  height: 100px;
+  background-color: #222;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}
