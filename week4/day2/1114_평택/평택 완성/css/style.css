@@ -1,0 +1,138 @@
+/* 공통 */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  /* height: 100px;
+  background-color: yellow; */
+  border-bottom: 1px solid black;
+  box-shadow: 0 1px 3px gray;
+}
+.h_top {
+  width: 100%;
+  height: 20px;
+  background-color: lightblue;
+}
+.h_top .inner {
+  position: relative;
+}
+.h_top a {
+  position: absolute;
+  right: 20px;
+  padding: 0 20px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.logo {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.logo img {
+  width: 100%;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+}
+nav > ul > li {
+  margin: 0 20px;
+  width: 100px;
+  position: relative;
+}
+nav > ul > li ul {
+  position: absolute;
+  display: none;
+}
+nav > ul:hover > li ul {
+  display: block;
+}
+nav > ul > li ul a {
+  display: block;
+  padding: 5px 10px;
+}
+nav > ul > li ul a:hover {
+  background-color: lightcyan;
+}
+
+/* 메인 */
+/* s1 */
+.s1 {
+  background: url(../images/main_back.png) no-repeat;
+  background-size: cover;
+  background-position: right bottom -10px;
+}
+.s1 .inner {
+  display: flex;
+  justify-content: space-between;
+}
+.a1 {
+  width: 354px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.a2,
+.a3,
+.a4 {
+  width: calc((100% - 354px - 60px) / 3);
+  /* border: 1px solid red; */
+}
+article div {
+  /* background-color: aliceblue; */
+  border-radius: 20px;
+  box-shadow: 0 0 5px gray;
+}
+
+.a2 div {
+  width: 100%;
+  height: 100%;
+  background: url(../images/main_icon2_t.png) aliceblue no-repeat center;
+}
+
+.a3 {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.a3 div {
+  width: 100%;
+  height: calc((100% - 10px) / 2);
+}
+.a3 div:first-of-type {
+  background: url(../images/main_icon1_t.png) aliceblue no-repeat center;
+}
+.a3 div:last-of-type {
+  background: url(../images/main_icon1_2_t.png) aliceblue no-repeat center;
+}
+.a4 {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.a4 div:first-of-type {
+  width: 100%;
+  height: calc((100% - 10px) / 2);
+  background: url(../images/main_icon1_2_t.png) aliceblue no-repeat center;
+}
+.a4 div:nth-of-type(2),
+.a4 div:last-of-type {
+  width: 100%;
+  height: calc((100% - 20px) / 4);
+  background: url(../images/main_icon4.png) aliceblue no-repeat center;
+}
