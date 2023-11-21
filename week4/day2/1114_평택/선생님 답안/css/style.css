@@ -76,6 +76,7 @@ nav > ul > li ul a:hover {
   background: url(../images/main_back.png) no-repeat;
   background-size: cover;
   background-position: right bottom -10px;
+  padding: 20px 0;
 }
 .s1 .inner {
   display: flex;
@@ -139,17 +140,27 @@ article div {
 
 
 /* ----------------------------------------중단점 ---------------------------------------- */
-/* ~1200px 이상 - px/inner */
+                                /* ~1200px 이상 - pc/inner */
+                                /* 1200px ~ 1000px - pc/100% 
+                                  1000px ~ 650px - 태블릿
+                                  650px 이하 ~ - 모바일*/
+
+.s1 .inner .f_wrap {
+  display: flex;
+  justify-content: space-between;
+  width:calc((100% - 354px)) ;
+}
 
 @media all and (max-width:1200px){
   .inner{
     width: 100%;
+    height: 500px;
   }
 }
 
-@media all and (max-width:1200px){
+@media all and (max-width:1000px){
 
-  .s1 .inner {
+  .s1 .f_wrap {
     /* display: flex;
     justify-content: space-between; */
     flex-wrap: wrap;
@@ -158,24 +169,65 @@ article div {
   .a2,
   .a3,
   .a4 {
-    width: calc((100% - 354px - 60px) / 2);
+    width: calc((100% - 354px - 40px) / 2);
     /* border: 1px solid red; */
     height: calc((100% - 10px) / 2);
   }
   
   .a2 div {
-    height: calc((100% - 10px) / 2);
-
+    /* height: calc((100% - 10px) / 2); */
+    height: 1005;
   }
 
   .a3 div:first-of-type {
     height: calc((100% - 10px) / 2);
-    background: url(../images/main_icon1_t.png) 
+    background: url(../images/main_icon1_t_m.png) 
     aliceblue no-repeat center;
   }
   .a3 div:last-of-type {
     height: calc((100% - 10px) / 2);
-    background: url(../images/main_icon1_2_t.png) 
+    background: url(../images/main_icon1_2_t_m.png) 
     aliceblue no-repeat center;
   }
+  .a4 {
+    /* float: right;
+    width: calc(100% - 354px-20px); */
+    width: 100%;
+    display: block;
+    height: 50%;
+    /* calc 설명 , 전체 - 354 픽셀 - 마진 픽셀 */
+    /* display: flex;
+    align-content: space-between;
+    flex-wrap: wrap; */
+  }
+  .a4::after{
+    display: block;
+    content: "";
+    clear: both;
+  }
+  
+  .f_wrap .a4 div {
+    float: right;
+    width: 49%;
+  }
+  
+  .a4 div:first-of-type {
+    float: left;
+  }
+  /* float 으로 작성할수 있다   */
+  @medi all and (max-width:650px) {
+    .s1 .inner {
+      height:1020px;
+      flex-wrap:wrap;
+    }
+    .s1 .a1 {
+      width: 80%;
+    }
+    main .s1 .inner .f_wrap {
+      width: 80%;
+      margin: auto;
+    }
+/* 스타일 이 제대로 적용 안되면 부모 단계를 지정해준다 */
+  }
+  /* 하단에 로고 는 스크립트로 작성한다  */
 }
