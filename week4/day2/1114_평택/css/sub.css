@@ -1,0 +1,145 @@
+/******************sub01****************/
+/******************section****************/
+section h3{
+    font-size: 2.5rem;
+    color: #333333;
+    border-bottom: 1px solid #777777;
+    padding-bottom: 20px;
+}
+section #start{
+    font-size: 1.9rem;
+    padding-top: 105px;
+    line-height: 1.7;
+}
+.blue{
+    color: #0054CD;
+}
+
+section #con1{
+    padding-top: 100px;
+    font-size: 1.3rem;
+    line-height: 2.2;
+    padding-bottom: 50px;
+}
+section #end{
+    text-align: right;
+    font-size: 1.3rem;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+section #end img{
+    width: 28px;
+    margin-right: 10px;
+
+}
+/******************sub02****************/
+#section01{
+    padding-bottom: 100px;
+}
+#section01 h4{
+    padding-top: 95px;
+    font-size: 1.7rem;
+    color: #333333;
+    margin-bottom: 50px;
+}
+#section01 img{
+    margin-right: 3px;
+}
+#section01 ul{
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+#section01 .skyblue{
+    color: #19B4B4;
+    font-size: 1.9rem;
+    margin-right: 10px;
+    font-weight: 500;
+
+
+}
+#section01 .ing1, .ing2, #section02 p{
+    color: #333333;
+}
+#section01 .ing1{
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+    
+}
+#section01 .ing2{
+    line-height: 2;
+}
+/******************sub03****************/
+
+#section02{
+    padding-bottom: 128px;
+    
+}
+#section02 p{
+    padding-top: 100px;
+    font-size: 1.3rem;
+    line-height: 2;
+    padding-bottom: 95px;
+
+}
+#section02 .you{
+    color: #19B4B4;
+    font-weight: 600;
+}
+#section02 .your .your1{
+    color: #333333;
+}
+#section02 .your{
+    font-size: 1.7rem;
+    padding-right: 20px;
+    font-weight: 600;
+} 
+#section02 ul img{
+    padding-right: 10px;
+}
+#section02 ul li{
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-bottom: 45px;
+
+}
+#section02 ul li:last-child{
+    padding-bottom: 0;
+}
+#section02 h5{
+    padding-top: 30px;
+    padding-bottom: 35px;
+    font-size: 1rem;
+    font-weight: 400;
+} 
+#section02 .your1{
+    padding-right: 20px;
+    font-weight: 600;
+}  
+#section02 .your1, h6{
+    font-size: 1.2rem;
+}
+#section02 h5 ,h6{
+    padding-left: 35px;
+} 
+#section02 h6{
+    padding-bottom: 10px;
+}
+#section02 table{
+    border-collapse: collapse;
+    margin-left: 35px;
+    text-align: center;
+    width: 890px;
+
+}
+#section02 th, td, tr{
+    padding: 10px 20px 10px 20px;
+}
+#section02 th{
+    background-color: #CCCCCC;
+    border-top: solid 2px #777777;
+    padding: 10px 20px 10px 20px;
+}
+#section02 th ,td{
+    border-bottom: solid 0.5px #AAAAAA;
+}
+

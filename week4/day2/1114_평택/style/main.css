@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrap {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrap > header {
+    height: 50px;
+    width: 100%;
+    margin-top: 0;
+    background-color: aquamarine;
+}
+
+.wrap header img {
+    text-align: center;
+}
+
+button {
+    background-color: rgba(0, 0, 0,0);
+    color: black;
+    float: right;
+    height: 50px;
+    width: 70px;
+}
+
+
+div::after{display: block; content: ""; clear: both;}
+
+/* -------------------------헤더 ----------------------*/
+header {
+    height: 100px;
+    background-color: #222;
+    box-sizing: border-box;
+}
+
+header nav > ul {
+    /* height: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+header nav > ul li {
+    position: relative;
+    width: 150px;
+    text-align: center;
+    
+}
+header nav > ul > li:hover ul {
+    display: block;
+    /* 팁 : height : 100px;
+    transition: 1s;*/
+}
+
+header nav>ul>li a {
+    display: block;
+    padding: 5px 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+header nav > ul > li > ul {
+    position: absolute;
+
+    display: none;
+    /* 팁 : 위 기능 말고 
+    height : 0;
+    overflow:hidden; */
+}
+
+header nav > ul > li > ul > a {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgba(33, 33, 33, 0.5);
+}
+
+
+
+header nav>ul>li a:hover {
+    color: yellow;
+}
+
+/* FLEXFLEXFLEXFLEXFLEXFLEXFLEXFLEXFLEXFLEXFLEXFLEXFLEXFLEXFLEXFLEXFLEX */
+
+.contain {
+    flex-wrap: wrap; 
+}
+
+section{
+    width: 100%;
+    display: flex;
+    /* 이렇게 하면 기본적으로 가로 정렬하게 된다 */
+    flex-direction: row;
+}
+
+.veiw2 {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
