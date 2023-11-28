@@ -1,0 +1,179 @@
+/* 공통 */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  /* height: 100px;
+  background-color: yellow; */
+  border-bottom: 1px solid black;
+  box-shadow: 0 1px 3px gray;
+}
+.h_top {
+  width: 100%;
+  height: 20px;
+  background-color: lightblue;
+}
+.h_top .inner {
+  position: relative;
+}
+.h_top a {
+  position: absolute;
+  right: 20px;
+  padding: 0 20px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.logo {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.logo img {
+  width: 100%;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+}
+nav > ul > li {
+  margin: 0 20px;
+  width: 100px;
+  position: relative;
+}
+nav > ul > li ul {
+  position: absolute;
+  display: none;
+}
+nav > ul:hover > li ul {
+  display: block;
+}
+nav > ul > li ul a {
+  display: block;
+  padding: 5px 10px;
+}
+nav > ul > li ul a:hover {
+  background-color: lightcyan;
+}
+
+/* 메인 */
+/* s1 */
+#main_sec1 {
+  padding: 30px 0;
+  width: 100%;
+  background: url(../images/main_back.png) no-repeat;
+  background-position: right 50px bottom;
+  background-size: cover;
+}
+/*메인 슬라이드*/
+.con_slide {
+  width: 354px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.con_slide img {
+  width: 100%;
+  display: block;
+}
+.con_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.con_but {
+  width: calc(100% - 354px - 20px);
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.con_but article {
+  width: calc((100% - 40px) / 3);
+  border: 1px solid blue;
+}
+
+.con_but article div {
+  width: 100%;
+  background-color: #e4efee;
+}
+.a1 div {
+  height: 100%;
+}
+.a2,
+.a3 {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.a2 div,
+.a3 div:first-of-type {
+  height: calc((100% - 20px) / 2);
+}
+.a3 div:last-child,
+.a3 div:nth-of-type(2) {
+  height: calc((100% - 30px) / 4);
+}
+
+@media all and (max-width: 1200px) {
+  .inner {
+    width: 100%;
+  }
+  .con_but {
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .con_but .a1,
+  .con_but .a2 {
+    width: calc((100% - 20px) / 2);
+    height: 50%;
+  }
+  .con_but .a3 {
+    width: 100%;
+    height: 50%;
+    display: block;
+  }
+  .con_but .a3::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  .con_but .a3 div {
+    width: calc((100% - 20px) / 2);
+    float: left;
+  }
+  .con_but .a3 div:first-of-type {
+    height: 100%;
+  }
+  .con_but .a3 div:nth-child(2),
+  .con_but .a3 div:last-child {
+    float: right;
+    height: 50%;
+  }
+}
+@media all and (max-width: 790px) {
+  .con_flex {
+    flex-wrap: wrap;
+  }
+  .con_slide {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .con_but {
+    margin: 0 auto;
+    width: 80%;
+    height: 500px;
+  }
+}

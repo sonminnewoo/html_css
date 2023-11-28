@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+     <head>
+        <meta charset="utf-8">
+        <title> 시맨틱태그 </title>
+     </head>
+     <body>
+      <header>
+   <nav></nav>
+   
+      </header>
+     <main>
+        <section class="shoping">
+            <p class="t_1">쇼핑</p> <!--띄어쓰기 x 숫자먼저x-->
+            <article> </article>
+            <div> <!--빈폴더같은존재--> 
+             블럭레벨로 영역을구분    </div> 
+            <span> 인라인레벨로 영역을 구분            </span>
+            <h2> <span>증시</span><span>2023.02.30</span></h2>
+        </section>   <!--콘텐츠 구분-->
+     </main>
+     <footer></footer>
+    
+    
+    </body>
+     </html>
+
