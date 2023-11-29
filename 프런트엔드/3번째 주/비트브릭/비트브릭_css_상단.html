@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비트브릭</title>
+    <style>
+      /* 공통 */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrap {
+        width: 1920px;
+        margin: 0 auto;
+      }
+
+      /* header */
+      header::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      header .logo {
+        float: left;
+        width: 150px;
+        height: 50px;
+      }
+      header .logo img {
+        width: 100%;
+        max-width: 100%;
+      }
+      header nav {
+        float: right;
+        width: 350px;
+        height: 50px;
+      }
+      header nav ul {
+        list-style: none;
+      }
+      header nav ul li {
+        display: inline-block;
+      }
+      header nav ul li a {
+        color: #555a6d;
+        text-decoration: none;
+        line-height: 50px;
+        background-color: aqua;
+      }
+      .s1 img {
+        display: block;
+      }
+      .s2 {
+        background: linear-gradient(120deg, #ccc 70%, #fff 70%);
+        width: 1920px;
+        height: 711px;
+        position: relative;
+      }
+      .s2 > div {
+        width: 400px;
+        height: 300px;
+        /* border: 1px solid; */
+        position: absolute;
+        top: 100px;
+        left: 200px;
+      }
+      .s2 > img {
+        position: absolute;
+        width: 700px;
+        right: 300px;
+        bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo"><img src="img/logo-1.png" alt="logo" /></div>
+        <nav>
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">회사소개</a></li>
+          </ul>
+        </nav>
+        <!--clear-->
+      </header>
+      <main>
+        <section class="s1">
+          <img src="img/mainimg.png" alt="비트뮤직 출시 안내 메인 배너" />
+        </section>
+        <section class="s2">
+          <div>
+            <h3>만지고 배우고</h3>
+            <h1>비트브릭</h1>
+            <p>비트브릭은~~~~</p>
+            <div class="button"><a href="#">쇼핑몰가기</a></div>
+          </div>
+          <img src="img/main.png" />
+        </section>
+        <section>
+          <article>
+            <img src="img/bitCat-200x200.png" alt="비트브릭 캐릭터" />
+            <p>브트브릭 이렇게~</p>
+          </article>
+          <article>
+            <div class="left">
+              <h4>센서보드처럼 ~</h4>
+              <img src="img/easily3.png" alt="아이콘" />
+              <p>내용ㅇ~~~~</p>
+            </div>
+            <div class="right">
+              <h4>센서보드처럼 ~</h4>
+              <img src="img/easily3.png" alt="아이콘" />
+              <p>내용ㅇ~~~~</p>
+            </div>
+          </article>
+          <article>
+            <div class="left">
+              <h4>센서보드처럼 ~</h4>
+              <img src="img/easily3.png" alt="아이콘" />
+              <p>내용ㅇ~~~~</p>
+            </div>
+            <div class="right">
+              <h4>센서보드처럼 ~</h4>
+              <img src="img/easily3.png" alt="아이콘" />
+              <p>내용ㅇ~~~~</p>
+            </div>
+          </article>
+        </section>
+      </main>
+      <footer>
+        <p>카피라이트~~</p>
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="img/if_03-twitter_104501_.png" alt="페이스북"
+            /></a>
+            <a href="#"
+              ><img src="img/if_03-twitter_104501_.png" alt="페이스북"
+            /></a>
+            <a href="#"
+              ><img src="img/if_03-twitter_104501_.png" alt="페이스북"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

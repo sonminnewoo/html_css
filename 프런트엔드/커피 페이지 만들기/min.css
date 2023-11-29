@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrap{
+    border: 1px solid black;
+    width: 2500px;
+    background-color: black;
+    } 
+
+h1 {
+    color: white;
+}
+#woo {
+    background-color: brown;
+}
+span {
+    color: bisque;
+}
