@@ -54,8 +54,6 @@ header nav ul {
     width: 690px;
 }
 
-header nav ul{list-style: none;}
-
 
 /* ul 위에 클리어 넣으려면 ul 에다 넣는다   */
 header nav ul ::after{
